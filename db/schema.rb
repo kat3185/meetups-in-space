@@ -11,10 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140606200404) do
+ActiveRecord::Schema.define(version: 20150616181128) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "meetups", force: true do |t|
+    t.string "name",        null: false
+    t.string "location",    null: false
+    t.string "description", null: false
+    t.string "date",        null: false
+  end
 
   create_table "users", force: true do |t|
     t.string   "provider",   null: false
