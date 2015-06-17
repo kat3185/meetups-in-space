@@ -1,3 +1,4 @@
+# pair programmed with Joseph Tessel
 require 'sinatra'
 require 'sinatra/activerecord'
 require 'sinatra/flash'
